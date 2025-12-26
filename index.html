@@ -1,37 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello World Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            min-height: 100vh;
-            margin: 0;
-        }
-        h1 { 
-            font-size: 3em; 
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        p {
-            font-size: 1.3em;
-            opacity: 0.9;
-        }
-        .emoji {
-            font-size: 4em;
-            display: block;
-            margin-bottom: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★·.·´¯`·.·★ Steph's Homepage ★·.·´¯`·.·★</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <span class="emoji">🎉</span>
-    <h1>Hello World!</h1>
-    <p>If you can see this, everything is working!</p>
-    <p>Ready to build something amazing!</p>
+    <!-- Starfield background -->
+    <div class="starfield" id="starfield"></div>
+    
+    <!-- Marquee banner -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            ★ ★ ★ Welcome to my corner of the internet! ★ ★ ★ You are visitor #<span id="marquee-count">???</span>! ★ ★ ★ Best viewed in Netscape Navigator ★ ★ ★ Sign my guestbook! ★ ★ ★
+        </marquee>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="rainbow-text">✨ Steph ✨</h1>
+            <p class="subtitle">Manager, Commercial Partnerships at <span class="shopify-green">Shopify</span></p>
+            <div class="under-construction">
+                <span class="blink">🚧 UNDER CONSTRUCTION 🚧</span>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="retro-box">
+            <h2>📝 About Me</h2>
+            <div class="section-content">
+                <img src="https://web.archive.org/web/20091027065803im_/http://geocities.com/SiliconValley/Haven/1899/anim_icon.gif" alt="computer" class="retro-gif">
+                <p>
+                    Hey there, web surfer! 🏄‍♀️ Welcome to my personal homepage on the World Wide Web! 
+                    I'm Steph, and I'm stoked you found your way here. I work at Shopify helping build 
+                    awesome commercial partnerships. When I'm not crushing it at work, you can find me 
+                    being a busy mom, spinning on my Peloton, or diving into a good book!
+                </p>
+                <p class="blink">Thanks for stopping by! 💖</p>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="retro-box lime-border">
+            <h2>💼 My Work at Shopify</h2>
+            <div class="section-content">
+                <p>
+                    I'm part of the <strong>Commercial Partnerships</strong> team at Shopify! 🛒
+                </p>
+                <ul class="retro-list">
+                    <li>🤝 Building strategic partnerships</li>
+                    <li>📈 Driving commercial growth</li>
+                    <li>🌟 Making commerce better for everyone</li>
+                    <li>💚 Proud member of the Shopify family</li>
+                </ul>
+                <div class="shopify-badge">
+                    <span>Powered by</span>
+                    <span class="shopify-green big-text">Shopify</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="retro-box yellow-border">
+            <h2>🎮 My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🚴</div>
+                    <h3>Peloton</h3>
+                    <p>Crushing those PRs and chasing that leaderboard! #PelotonMom</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">👩‍👧‍👦</div>
+                    <h3>Being a Mom</h3>
+                    <p>The most rewarding (and chaotic) adventure of my life!</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">📚</div>
+                    <h3>Reading</h3>
+                    <p>Always have a book (or three) going at once!</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🧠</div>
+                    <h3>Learning</h3>
+                    <p>Forever curious, always growing. Knowledge is power!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="retro-box cyan-border">
+            <h2>📧 Contact Me</h2>
+            <div class="section-content contact-section">
+                <p>Want to chat? Drop me a line!</p>
+                <div class="contact-links">
+                    <a href="mailto:steph.mace@shopify.com" class="retro-button">
+                        ✉️ Email Me!
+                    </a>
+                </div>
+                <div class="guestbook">
+                    <p class="blink">🖊️ Sign my guestbook! 🖊️</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visitor Counter -->
+        <div class="visitor-counter">
+            <div class="counter-box">
+                <p>You are visitor number:</p>
+                <div class="counter-display" id="visitor-count">000000</div>
+                <p class="counter-since">Since December 2025</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-gifs">
+                <img src="https://web.archive.org/web/20091027065803im_/http://geocities.com/SiliconValley/Haven/1899/emailani.gif" alt="email" class="footer-gif">
+                <img src="https://web.archive.org/web/20090829052202im_/http://hk.geocities.com/nickydragonash/netscape.gif" alt="netscape" class="footer-gif">
+            </div>
+            <p>Made with 💖 and lots of ☕</p>
+            <p class="copyright">© 2025 Steph's Homepage | Best viewed at 800x600</p>
+            <div class="webrings">
+                <span>[ </span>
+                <a href="#">← Prev</a>
+                <span> | </span>
+                <a href="#">GeoCities WebRing</a>
+                <span> | </span>
+                <a href="#">Next →</a>
+                <span> ]</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
